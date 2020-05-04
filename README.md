@@ -6,6 +6,7 @@ Webpack plugin to copy version number from package.json to manifest.json or any 
 npm install --save-dev **webpack-copy-version-plugin**
 
 **Usage**
+
     const CopyVersionPlugin = require("webpack-copy-version-plugin");
     
     ...
