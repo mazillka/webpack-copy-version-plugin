@@ -23,7 +23,13 @@ class CopyVersionPlugin {
 			const { version } = require(path.resolve(context, from));
 			const fileToUpdate = require(path.resolve(context, to));
 
-			fs.writeFile(to, JSON.stringify({ ...fileToUpdate, version }, null, 4));
+			fs.writeFile(to, JSON.stringify({ ...fileToUpdate, version }, null, 4), error => {
+				if (error) {
+					console.error(`webpack-copy-version-plugin: can't copy version`, error);
+				} else {
+					console.log("webpack-copy-version-plugin: version copied successfully");
+				}
+			});
 
 			callback();
 		});
