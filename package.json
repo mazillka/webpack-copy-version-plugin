@@ -6,8 +6,20 @@
 	"main": "index.js",
 	"license": "MIT",
 	"keywords": [
-		"webpack", "plugin", "json", "package", "manifest", "copy", "version", "number", "package.json", "manifest.json"
+		"webpack",
+		"plugin",
+		"json",
+		"package",
+		"manifest",
+		"copy",
+		"version",
+		"number",
+		"package.json",
+		"manifest.json"
 	],
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/mazillka/webpack-copy-version-plugin.git"
