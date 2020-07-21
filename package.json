@@ -17,9 +17,6 @@
 		"package.json",
 		"manifest.json"
 	],
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/"
-	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/mazillka/webpack-copy-version-plugin.git"
