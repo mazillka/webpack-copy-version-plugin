@@ -26,6 +26,6 @@
 	},
 	"homepage": "https://github.com/mazillka/webpack-copy-version-plugin#readme",
 	"devDependencies": {
-		"prettier": "^2.1.1"
+		"prettier": "^2.1.2"
 	}
 }
