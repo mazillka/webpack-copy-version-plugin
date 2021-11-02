@@ -1,5 +1,5 @@
-const fs = require("fs");
-const path = require("path");
+import { writeFile } from "fs";
+import { resolve } from "path";
 
 class CopyVersionPlugin {
 	constructor(options) {
@@ -20,14 +20,14 @@ class CopyVersionPlugin {
 			}
 
 			const { from, to } = this.options;
-			const { version } = require(path.resolve(context, from));
-			const fileToUpdate = require(path.resolve(context, to));
+			const { version } = require(resolve(context, from));
+			const fileToUpdate = require(resolve(context, to));
 
-			fs.writeFile(to, JSON.stringify({ ...fileToUpdate, version }, null, 4), error => {
+			writeFile(to, JSON.stringify({ ...fileToUpdate, version }, null, 4), error => {
 				if (error) {
-					console.error(`webpack-copy-version-plugin: can't copy version`, error);
+					console.error(`webpack-copy-version-plugin: can't copy version. Version: ${version}`, error);
 				} else {
-					console.log("webpack-copy-version-plugin: version copied successfully");
+					console.log(`webpack-copy-version-plugin: version copied successfully. Version: ${version}`);
 				}
 			});
 
@@ -36,4 +36,4 @@ class CopyVersionPlugin {
 	}
 }
 
-module.exports = CopyVersionPlugin;
+export default CopyVersionPlugin;

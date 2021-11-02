@@ -2,7 +2,7 @@
 	"author": "Andrii Shevchuk-Yuhanets",
 	"name": "webpack-copy-version-plugin",
 	"description": "Webpack plugin to copy version number from package.json to manifest.json or any other json files with version property",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"main": "index.js",
 	"license": "MIT",
 	"keywords": [
@@ -24,8 +24,5 @@
 	"bugs": {
 		"url": "https://github.com/mazillka/webpack-copy-version-plugin/issues"
 	},
-	"homepage": "https://github.com/mazillka/webpack-copy-version-plugin#readme",
-	"devDependencies": {
-		"prettier": "^2.1.2"
-	}
+	"homepage": "https://github.com/mazillka/webpack-copy-version-plugin#readme"
 }
