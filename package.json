@@ -5,6 +5,9 @@
 	"version": "1.0.6",
 	"main": "index.js",
 	"license": "MIT",
+	"scripts": {
+		"test": "echo \"no tests specified\""
+	},
 	"keywords": [
 		"webpack",
 		"plugin",
